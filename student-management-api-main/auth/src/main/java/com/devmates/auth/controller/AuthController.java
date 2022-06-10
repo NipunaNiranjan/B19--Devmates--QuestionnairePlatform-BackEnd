@@ -71,6 +71,10 @@ public class AuthController {
         return "hello world";
     }
 
+    @PostMapping("/new")
+    public String nfew(){
+        return "new";
+    }
 
 
 }
