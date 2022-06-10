@@ -66,9 +66,7 @@ public class AuthController {
                 .body("Your account has been created successfully!").build();
         return ResponseEntity.status(HttpStatus.CREATED).body(responseDTO);
     }
-    @GetMapping("/home")
-    public String hello(){
-        return "hello world";
-    }
+
+
 
 }
