@@ -21,4 +21,6 @@ public class QuestionnaireDTO {
     private String description;
     @Column
     private Integer duration;
+    @Column
+    private String type;
 }

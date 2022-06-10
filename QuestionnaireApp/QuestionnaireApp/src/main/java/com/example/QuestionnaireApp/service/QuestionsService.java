@@ -42,7 +42,7 @@ public class QuestionsService {
         questionsDTO1.get().setQuestionnaireId(questionsDTO.getQuestionnaireId());
         questionsDTO1.get().setQuestion(questionsDTO.getQuestion());
         questionsDTO1.get().setName(questionsDTO.getName());
-        questionsDTO1.get().setType(questionsDTO.getType());
+        //questionsDTO1.get().setType(questionsDTO.getType());
 
         return questionBankRepository.save(questionsDTO1.get());
     }

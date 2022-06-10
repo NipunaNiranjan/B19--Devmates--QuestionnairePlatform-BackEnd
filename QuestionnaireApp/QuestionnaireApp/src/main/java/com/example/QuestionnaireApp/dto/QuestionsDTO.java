@@ -21,6 +21,4 @@ public class QuestionsDTO {
     private String name;
     @Column
     private String question;
-    @Column
-    private String type;
 }
