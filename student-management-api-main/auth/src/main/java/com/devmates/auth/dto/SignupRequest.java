@@ -33,7 +33,9 @@ public class SignupRequest {
     private  String email;
 
 
-
+    @NotBlank(message = "{NotEmpty.phone}")
+    @Digits(message="Number should contain 10 digits.", fraction = 0, integer = 10)
+    private String phone;
 
 
     public SignupRequest(Long id, String username, String password, String role) {
