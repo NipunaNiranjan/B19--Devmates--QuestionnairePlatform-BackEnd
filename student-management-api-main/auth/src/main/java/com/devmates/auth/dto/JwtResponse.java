@@ -2,7 +2,7 @@ package com.devmates.auth.dto;
 
 import java.util.List;
 
-public class JwtResponse {
+public class   JwtResponse {
 	private String token;
 	private String type = "Bearer";
 	private String id;

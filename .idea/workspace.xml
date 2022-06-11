@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8641edbc-46e6-454a-9985-c2ab031dc393" name="Changes" comment="added new test get mapping">
+    <list default="true" id="8641edbc-46e6-454a-9985-c2ab031dc393" name="Changes" comment="added new test post mapping">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/src/main/java/com/devmates/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/src/main/java/com/devmates/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/src/main/java/com/devmates/auth/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/src/main/java/com/devmates/auth/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/src/main/java/com/devmates/auth/dto/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/src/main/java/com/devmates/auth/dto/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/src/main/java/com/devmates/auth/dto/SignupRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/src/main/java/com/devmates/auth/dto/SignupRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/src/main/java/com/devmates/auth/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/src/main/java/com/devmates/auth/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/com/devmates/auth/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/com/devmates/auth/controller/AuthController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +26,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -48,6 +59,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -69,7 +84,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654849750242</updated>
-      <workItem from="1654849766632" duration="2604000" />
+      <workItem from="1654849766632" duration="3699000" />
+      <workItem from="1654864142911" duration="5384000" />
+      <workItem from="1654906473191" duration="2371000" />
+      <workItem from="1654922438448" duration="1289000" />
+      <workItem from="1654937250192" duration="36000" />
+      <workItem from="1654937566087" duration="6037000" />
     </task>
     <task id="LOCAL-00001" summary="test get mapping request deleted">
       <created>1654851487394</created>
@@ -92,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654852089187</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added new test post mapping">
+      <created>1654852466104</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654852466104</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +140,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test get mapping request deleted" />
     <MESSAGE value="added new test get mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new test get mapping" />
+    <MESSAGE value="added new test post mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new test post mapping" />
   </component>
 </project>

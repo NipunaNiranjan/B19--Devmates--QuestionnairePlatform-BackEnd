@@ -18,10 +18,12 @@ public class DataLoader implements ApplicationRunner {
     private final RoleRepository roleRepository;
     private final PasswordEncoder passwordEncoder;
 
+
     @Value("${sms-auth.app.admin-username}")
     private String adminUsername;
     @Value("${sms-auth.app.admin-password}")
     private String adminPassword;
+
 
     public DataLoader(UserRepository userRepository, RoleRepository roleRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
