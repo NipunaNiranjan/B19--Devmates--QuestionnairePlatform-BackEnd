@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8641edbc-46e6-454a-9985-c2ab031dc393" name="Changes" comment="change readme file and signup request">
+    <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="change readme file and signup request">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/com/devmates/auth/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/com/devmates/auth/DataLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/com/devmates/auth/dto/SignupRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/com/devmates/auth/dto/SignupRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/com/devmates/auth/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-api-main/auth/target/classes/com/devmates/auth/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/QuestionnaireApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/QuestionnaireApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +21,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
@@ -31,7 +40,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
@@ -61,12 +70,28 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="auth" />
+    <configuration name="AuthApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="QuestionnaireApp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.devmates.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="QuestionnaireApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.devmates.auth.AuthApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,7 +100,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8641edbc-46e6-454a-9985-c2ab031dc393" name="Changes" comment="" />
+      <changelist id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="change readme file and signup request" />
       <created>1654849750242</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -86,6 +111,7 @@
       <workItem from="1654922438448" duration="1289000" />
       <workItem from="1654937250192" duration="36000" />
       <workItem from="1654937566087" duration="7975000" />
+      <workItem from="1655017740800" duration="250000" />
     </task>
     <task id="LOCAL-00001" summary="test get mapping request deleted">
       <created>1654851487394</created>
