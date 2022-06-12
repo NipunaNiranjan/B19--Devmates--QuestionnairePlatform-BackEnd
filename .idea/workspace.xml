@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="add email and password to SignupRequest">
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/devmates/auth/dto/SignupRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/devmates/auth/dto/SignupRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/devmates/auth/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/devmates/auth/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/ValidationMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/ValidationMessages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/dto/SignupRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/dto/SignupRequest.class" afterDir="false" />
+    <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="add email and password to User.java &amp; change ValidationMessages">
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/devmates/auth/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/devmates/auth/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/model/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <workItem from="1654937566087" duration="7975000" />
       <workItem from="1655017740800" duration="599000" />
       <workItem from="1655018429093" duration="764000" />
-      <workItem from="1655051706349" duration="903000" />
+      <workItem from="1655051706349" duration="1218000" />
     </task>
     <task id="LOCAL-00001" summary="test get mapping request deleted">
       <created>1654851487394</created>
@@ -168,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655052287925</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add email and password to User.java &amp; change ValidationMessages">
+      <created>1655052729961</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1655052729961</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +199,7 @@
     <MESSAGE value="change folder to questioner app" />
     <MESSAGE value="import files" />
     <MESSAGE value="add email and password to SignupRequest" />
-    <option name="LAST_COMMIT_MESSAGE" value="add email and password to SignupRequest" />
+    <MESSAGE value="add email and password to User.java &amp; change ValidationMessages" />
+    <option name="LAST_COMMIT_MESSAGE" value="add email and password to User.java &amp; change ValidationMessages" />
   </component>
 </project>
