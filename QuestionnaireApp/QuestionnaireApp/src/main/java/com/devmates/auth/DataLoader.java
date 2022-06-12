@@ -25,6 +25,8 @@ public class DataLoader implements ApplicationRunner {
     private String adminPassword;
     @Value("${sms-auth.app.admin-email}")
     private String adminEmail;
+    @Value("${sms-auth.app.admin-phone}")
+    private String adminphone;
 
     public DataLoader(UserRepository userRepository, RoleRepository roleRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
@@ -49,7 +51,7 @@ public class DataLoader implements ApplicationRunner {
 
 
         if(!userRepository.existsByUsername(adminUsername)) {
-            User user = new User(adminUsername, passwordEncoder.encode(adminPassword), adminEmail,null);
+            User user = new User(adminUsername, passwordEncoder.encode(adminPassword), adminEmail, adminphone);
             user.setId(100L);
             Role userRole = roleRepository.findByRole(ERole.ROLE_ADMIN)
                     .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
