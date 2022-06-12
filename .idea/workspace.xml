@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="add email and password to User.java &amp; change ValidationMessages">
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/devmates/auth/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/devmates/auth/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/model/User.class" afterDir="false" />
-    </list>
+    <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="change UserServiceImpl" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +98,7 @@
       <workItem from="1654937566087" duration="7975000" />
       <workItem from="1655017740800" duration="599000" />
       <workItem from="1655018429093" duration="764000" />
-      <workItem from="1655051706349" duration="1218000" />
+      <workItem from="1655051706349" duration="1669000" />
     </task>
     <task id="LOCAL-00001" summary="test get mapping request deleted">
       <created>1654851487394</created>
@@ -173,7 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655052729961</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add find method to user repo">
+      <created>1655053028631</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655053028631</updated>
+    </task>
+    <task id="LOCAL-00012" summary="change UserServiceImpl">
+      <created>1655053378037</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655053378037</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +211,8 @@
     <MESSAGE value="import files" />
     <MESSAGE value="add email and password to SignupRequest" />
     <MESSAGE value="add email and password to User.java &amp; change ValidationMessages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add email and password to User.java &amp; change ValidationMessages" />
+    <MESSAGE value="add find method to user repo" />
+    <MESSAGE value="change UserServiceImpl" />
+    <option name="LAST_COMMIT_MESSAGE" value="change UserServiceImpl" />
   </component>
 </project>
