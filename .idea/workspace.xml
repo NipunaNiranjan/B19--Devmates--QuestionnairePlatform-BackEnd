@@ -4,16 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="change readme file and signup request">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="change folder to questioner app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/QuestionnaireApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/QuestionnaireApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/devmates/auth/dto/SignupRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/devmates/auth/dto/SignupRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/ValidationMessages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/APIExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/AuthApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/DataLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/annotation/StrongPassword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/controller/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/dto/JwtResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/dto/LoginRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/dto/ResponseDTO$ResponseDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/dto/ResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/dto/SignupRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/exception/BadRequestException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/model/ERole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/repository/RoleRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/security/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/security/jwt/AuthEntryPointJwt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/security/jwt/AuthTokenFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/security/jwt/JwtUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/security/services/UserDetailsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/security/services/UserDetailsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/com/devmates/auth/validator/StrongPasswordValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/test-classes/com/devmates/auth/AuthApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +61,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -72,6 +93,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/Projects/student-management-api-main" />
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -80,7 +102,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.AuthApplication">
     <configuration name="AuthApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="QuestionnaireApp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.devmates.auth.AuthApplication" />
@@ -111,7 +133,8 @@
       <workItem from="1654922438448" duration="1289000" />
       <workItem from="1654937250192" duration="36000" />
       <workItem from="1654937566087" duration="7975000" />
-      <workItem from="1655017740800" duration="250000" />
+      <workItem from="1655017740800" duration="599000" />
+      <workItem from="1655018429093" duration="764000" />
     </task>
     <task id="LOCAL-00001" summary="test get mapping request deleted">
       <created>1654851487394</created>
@@ -148,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654946019594</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change folder to questioner app">
+      <created>1655018169597</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655018169597</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +201,7 @@
     <MESSAGE value="added new test get mapping" />
     <MESSAGE value="added new test post mapping" />
     <MESSAGE value="change readme file and signup request" />
-    <option name="LAST_COMMIT_MESSAGE" value="change readme file and signup request" />
+    <MESSAGE value="change folder to questioner app" />
+    <option name="LAST_COMMIT_MESSAGE" value="change folder to questioner app" />
   </component>
 </project>
