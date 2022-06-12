@@ -36,14 +36,13 @@ public class SignupRequest {
     private String role;
 
 
-
-
-    public SignupRequest(Long id, String username, String password, String role) {
+    public SignupRequest(String username, String password, String email, String phone, String role) {
         this.id = id;
         this.username = username;
         this.password = password;
+        this.email = email;
+        this.phone = phone;
         this.role = role;
-
-
     }
 }
+
