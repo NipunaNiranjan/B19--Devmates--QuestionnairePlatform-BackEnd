@@ -29,11 +29,12 @@ public class SignupRequest {
     @NotBlank(message = "{NotEmpty.Email}")
     private String email;
 
-    @NotBlank(message = "{NotEmpty.role}")
-    private String role;
+    @NotBlank(message = "{NotEmpty.phone}")
+    private String phone;
 
     @NotBlank(message = "{NotEmpty.role}")
     private String role;
+
 
 
 
