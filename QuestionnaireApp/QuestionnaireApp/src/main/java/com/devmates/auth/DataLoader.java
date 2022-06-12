@@ -49,7 +49,7 @@ public class DataLoader implements ApplicationRunner {
 
 
         if(!userRepository.existsByUsername(adminUsername)) {
-            User user = new User(adminUsername, passwordEncoder.encode(adminPassword));
+            User user = new User(adminUsername, passwordEncoder.encode(adminPassword),adminEmail ,null);
             user.setId(100L);
             Role userRole = roleRepository.findByRole(ERole.ROLE_ADMIN)
                     .orElseThrow(() -> new RuntimeException("Error: Role is not found."));

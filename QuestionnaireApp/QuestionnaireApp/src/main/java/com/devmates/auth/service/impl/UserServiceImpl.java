@@ -32,7 +32,8 @@ public class UserServiceImpl implements UserService {
         if(userOptionalByUsername.isPresent()) throw new BadRequestException("The given username already exists!");
         Optional<User> userOptionalByEmail = userRepository.findUserByEmail(signupRequest.getEmail());
         if(userOptionalByEmail.isPresent()) throw new BadRequestException("The given Email already exists!");
-        User user = new User(signupRequest.getUsername(), passwordEncoder.encode(signupRequest.getPassword()));
+        User user = new User(signupRequest.getUsername(), passwordEncoder.encode(signupRequest.getPassword()),
+                signupRequest.getEmail(), signupRequest.getPhone());
         ERole role;
         try {
             role = ERole.valueOf(signupRequest.getRole());
