@@ -21,9 +21,13 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+    @Column
+    private boolean status;
+
     public User(String username, String password) {
         this.username = username;
         this.password = password;
+        this.status= true;
     }
 
     @ManyToOne(
