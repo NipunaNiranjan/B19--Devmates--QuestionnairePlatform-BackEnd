@@ -23,7 +23,8 @@ public class DataLoader implements ApplicationRunner {
     private String adminUsername;
     @Value("${sms-auth.app.admin-password}")
     private String adminPassword;
-
+    @Value("${sms-auth.app.admin-email}")
+    private String adminEmail;
 
     public DataLoader(UserRepository userRepository, RoleRepository roleRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
