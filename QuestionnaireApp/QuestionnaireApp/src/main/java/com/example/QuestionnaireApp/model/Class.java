@@ -16,7 +16,7 @@ public class Class {
     @Id
     private int Class_id;
     private String name;
-    private int TeacherID;
+    private String TeacherID;
 
 
 }

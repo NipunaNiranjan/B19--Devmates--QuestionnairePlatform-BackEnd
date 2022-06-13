@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="QuestionnaireApp" target="11" />
+      <module name="QuestionnaireApp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

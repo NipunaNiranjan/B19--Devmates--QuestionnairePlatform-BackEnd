@@ -13,8 +13,7 @@ public class QuestionnaireAppApplication {
 		SpringApplication.run(QuestionnaireAppApplication.class, args);
 	}
 	@Bean
-
 	public ModelMapper modelMapper(){
-return new ModelMapper();
-}
+		return new ModelMapper();
+	}
 }
