@@ -33,11 +33,16 @@ public class UserController {
         return userViewRepository.findAll();
     }
 
-    @PutMapping ( path = "/deactivate/{id}" )
+    @PutMapping ( "/deactivate/{id}" )
     public String deactivateUser(@PathVariable Long id){
 
          return userServices.deactivateUserStatus(id);
 
+    }
+
+    @PutMapping("/admin/activate_user/{id}")
+    public  String activateUser(@PathVariable long id){
+         return userServices.activateUserStatus(id);
     }
 
 
