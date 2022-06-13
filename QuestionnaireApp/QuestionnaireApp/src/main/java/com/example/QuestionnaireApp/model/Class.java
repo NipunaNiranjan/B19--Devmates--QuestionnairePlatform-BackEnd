@@ -8,12 +8,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Class {
     @Id
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Data
     private long Class_id;
     private String name;
     private long TeacherID;
