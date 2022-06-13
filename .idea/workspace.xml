@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="final changes">
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Mobile-application" />
+        <entry key="$PROJECT_DIR$" value="student_viewing_class_and_questionaries" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,7 +32,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
@@ -102,6 +101,7 @@
       <workItem from="1655017740800" duration="599000" />
       <workItem from="1655018429093" duration="764000" />
       <workItem from="1655051706349" duration="3193000" />
+      <workItem from="1655081378910" duration="825000" />
     </task>
     <task id="LOCAL-00001" summary="test get mapping request deleted">
       <created>1654851487394</created>
