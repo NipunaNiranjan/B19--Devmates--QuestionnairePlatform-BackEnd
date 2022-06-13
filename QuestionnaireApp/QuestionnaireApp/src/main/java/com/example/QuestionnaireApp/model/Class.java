@@ -7,15 +7,16 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Entity
 public class Class {
     @Id
-    private long Class_id;
+    private int Class_id;
     private String name;
-    private long TeacherID;
+    private int TeacherID;
 
 
 }

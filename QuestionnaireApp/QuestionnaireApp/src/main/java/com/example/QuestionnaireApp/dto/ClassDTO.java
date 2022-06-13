@@ -8,9 +8,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class ClassDTO {
-    private long Class_id;
+    private int Class_id;
     private String name;
-    private long TeacherID;
+    private int TeacherID;
 
 
 }
