@@ -33,7 +33,7 @@ public class UserController {
         return userViewRepository.findAll();
     }
 
-    @PutMapping ( "/deactivate/{id}" )
+    @PutMapping ( "/admin/deactivate/{id}" )
     public String deactivateUser(@PathVariable Long id){
 
          return userServices.deactivateUserStatus(id);
