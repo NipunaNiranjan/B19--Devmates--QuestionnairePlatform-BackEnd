@@ -30,6 +30,10 @@ public class User {
         this.status= true;
     }
 
+    public User(long id) {
+        this.id = id;
+    }
+
     @ManyToOne(
             targetEntity = Role.class,
             optional = false

@@ -4,10 +4,9 @@ import com.example.QuestionnaireApp.model.User;
 import com.example.QuestionnaireApp.model.views.UserViews;
 import com.example.QuestionnaireApp.repository.UserRepository;
 import com.example.QuestionnaireApp.repository.UserViewRepository;
+import com.example.QuestionnaireApp.service.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,6 +20,9 @@ public class UserController {
     @Autowired
     private UserViewRepository userViewRepository;
 
+    @Autowired
+    private UserServices userServices;
+
     @GetMapping("/getUsers")
     public List<User> getUser () {
         return userRepository.findAll();
@@ -30,4 +32,13 @@ public class UserController {
     public List<UserViews> getUsers () {
         return userViewRepository.findAll();
     }
+
+    @PutMapping ( path = "/deactivate/{id}" )
+    public String deactivateUser(@PathVariable Long id){
+
+         return userServices.deactivateUserStatus(id);
+
+    }
+
+
 }
