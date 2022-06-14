@@ -5,6 +5,7 @@ import com.example.QuestionnaireApp.repository.QuestionBankRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Optional;
 
 @Service
@@ -22,11 +23,21 @@ public class QuestionsService {
     }
 
     /**
+     * find question by Questionaireid
+     * @param id
+     * @return
+     */
+    public ArrayList<QuestionsDTO> getQuestionByQuestionnaireId(final int id){
+        return questionBankRepository.findByQuestionnaireId(id);
+    }
+
+    /**
      * find question by id
      * @param id
      * @return
      */
-    public Optional<QuestionsDTO> getQuestionById(final int id){
+
+    public Optional<QuestionsDTO> getQuestion(final int id){
         return questionBankRepository.findById(id);
     }
 

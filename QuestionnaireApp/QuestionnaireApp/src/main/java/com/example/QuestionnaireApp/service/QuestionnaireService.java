@@ -30,4 +30,17 @@ public class QuestionnaireService {
         return questionnaireRepository.findAll();
     }
 
+    /**
+     * delete questionnaire by id
+     * @param id
+     * @return
+     */
+    public String deleteQuestionnaire(final int id){
+        if(questionnaireRepository.findById(id).isPresent()){
+            questionnaireRepository.deleteById(id);
+            return "Delete successfully";
+        }else{
+            return "Not found";
+        }
+    }
 }

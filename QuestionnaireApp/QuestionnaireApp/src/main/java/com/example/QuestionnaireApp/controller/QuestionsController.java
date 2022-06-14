@@ -31,14 +31,24 @@ public class QuestionsController {
     }
 
     /**
-     * get question by id
+     * get question by QuestionnaireId
      * @param id
      * @return
      */
     @GetMapping("/getQuestion/{id}")
-    public ResponseEntity<?> getQuestionById(@PathVariable("id") int id){
+    public ResponseEntity<?> getQuestionByQuestionnaireId(@PathVariable("id") int id){
         try{
-            return ResponseEntity.status(HttpStatus.OK).body(questionsService.getQuestionById(id));
+            return ResponseEntity.status(HttpStatus.OK).body(questionsService.getQuestionByQuestionnaireId(id));
+        }catch(Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        }
+    }
+
+
+    @GetMapping("/getQuestionById/{id}")
+    public ResponseEntity<?> getQuestion(@PathVariable("id") int id){
+        try{
+            return ResponseEntity.status(HttpStatus.OK).body(questionsService.getQuestion(id));
         }catch(Exception e){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }

@@ -39,4 +39,13 @@ public class QuestionnaireController {
         }
     }
 
+    @DeleteMapping("/deleteQuestionnaire/{id}")
+    public ResponseEntity<?> deleteQuestionnaire(@PathVariable("id") int id){
+        try{
+            return ResponseEntity.status(HttpStatus.OK).body(questionnaireService.deleteQuestionnaire(id));
+        }catch(Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        }
+    }
+
 }
