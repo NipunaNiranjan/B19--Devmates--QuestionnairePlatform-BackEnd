@@ -1,6 +1,5 @@
 package com.example.QuestionnaireApp.controller;
 
-import com.example.QuestionnaireApp.dto.UserDTO;
 import com.example.QuestionnaireApp.model.User;
 import com.example.QuestionnaireApp.repository.UserRepo;
 import com.example.QuestionnaireApp.service.UserService;
