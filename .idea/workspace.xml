@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="final changes">
-      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/controller/LaptopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/model/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/repository/LaptopRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/controller/ClassController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/dto/ClassDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/model/Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/repository/ClassRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/service/ClassService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
   </component>
   <component name="RunManager">
     <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="auth" />
+      <module name="QuestionnaireApp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.devmates.auth.AuthApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">

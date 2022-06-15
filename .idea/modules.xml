@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/B19--Devmates--QuestionnairePlatform-BackEnd.iml" filepath="$PROJECT_DIR$/.idea/B19--Devmates--QuestionnairePlatform-BackEnd.iml" />
-      <module fileurl="file://$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/auth.iml" filepath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/QuestionnaireApp.iml" filepath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/QuestionnaireApp.iml" />
     </modules>
   </component>
 </project>
