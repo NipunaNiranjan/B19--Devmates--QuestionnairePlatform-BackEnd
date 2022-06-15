@@ -9,7 +9,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class UserDTO {
+public class ClassDTO {
     private int classId;
     private String Classname;
     private int noOfStudents;

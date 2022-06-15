@@ -12,7 +12,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class User {
+public class Class {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
@@ -31,7 +31,7 @@ public class User {
     @Column
     private Date _to;
 
-    @Column(unique = true, nullable = false)
+    @Column(nullable = false)
     private String stu_username;
 
 }
