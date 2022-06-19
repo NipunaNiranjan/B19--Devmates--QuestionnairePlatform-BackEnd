@@ -21,6 +21,10 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+
+    @Column
+    private boolean status;
+
     @Column(unique = true, nullable = false)
     private String email;
 
@@ -33,6 +37,7 @@ public class User {
         this.password = password;
         this.email = email;
         this.phone = phone;
+        this.status= true;
     }
 
     @ManyToOne(
