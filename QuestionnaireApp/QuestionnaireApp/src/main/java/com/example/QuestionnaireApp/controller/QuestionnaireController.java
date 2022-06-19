@@ -1,6 +1,6 @@
 package com.example.QuestionnaireApp.controller;
 
-import com.example.QuestionnaireApp.dto.QuestionnaireDTO;
+import com.example.QuestionnaireApp.model.Questionnaire;
 import com.example.QuestionnaireApp.service.QuestionnaireService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +18,7 @@ public class QuestionnaireController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<Object> createQuestionnaire(@RequestBody QuestionnaireDTO data){
+    public ResponseEntity<Object> createQuestionnaire(@RequestBody Questionnaire data){
         try{
             return ResponseEntity.status(HttpStatus.OK).body(questionnaireService.saveQuestionnaire(data));
         }catch(Exception e){

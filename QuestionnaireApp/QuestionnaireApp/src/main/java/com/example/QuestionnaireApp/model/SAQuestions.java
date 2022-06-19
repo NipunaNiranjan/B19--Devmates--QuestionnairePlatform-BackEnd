@@ -1,4 +1,4 @@
-package com.example.QuestionnaireApp.dto;
+package com.example.QuestionnaireApp.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name= "QuestionsDTO")
+@Table(name= "SAQuestions")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class QuestionsDTO {
+public class SAQuestions {
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Integer id;

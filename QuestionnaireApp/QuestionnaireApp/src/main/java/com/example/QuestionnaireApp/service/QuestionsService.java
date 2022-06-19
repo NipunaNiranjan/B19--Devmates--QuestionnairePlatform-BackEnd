@@ -1,6 +1,6 @@
 package com.example.QuestionnaireApp.service;
 
-import com.example.QuestionnaireApp.dto.QuestionsDTO;
+import com.example.QuestionnaireApp.model.SAQuestions;
 import com.example.QuestionnaireApp.repository.QuestionBankRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ public class QuestionsService {
      * save question
      * @param data
      */
-    public void saveQuestions(QuestionsDTO data){
+    public void saveQuestions(SAQuestions data){
         questionBankRepository.save(data);
     }
 
@@ -27,7 +27,7 @@ public class QuestionsService {
      * @param id
      * @return
      */
-    public ArrayList<QuestionsDTO> getQuestionByQuestionnaireId(final int id){
+    public ArrayList<SAQuestions> getQuestionByQuestionnaireId(final int id){
         return questionBankRepository.findByQuestionnaireId(id);
     }
 
@@ -37,23 +37,23 @@ public class QuestionsService {
      * @return
      */
 
-    public Optional<QuestionsDTO> getQuestion(final int id){
+    public Optional<SAQuestions> getQuestion(final int id){
         return questionBankRepository.findById(id);
     }
 
     /**
      * update question
      * @param id
-     * @param questionsDTO
+     * @param SAQuestions
      * @return
      */
-    public QuestionsDTO updateQuestion(final int id, final QuestionsDTO questionsDTO){
+    public SAQuestions updateQuestion(final int id, final SAQuestions SAQuestions){
 
-        Optional<QuestionsDTO> questionsDTO1 = questionBankRepository.findById(id);
-        questionsDTO1.get().setQuestionnaireId(questionsDTO.getQuestionnaireId());
-        questionsDTO1.get().setQuestion(questionsDTO.getQuestion());
-        questionsDTO1.get().setName(questionsDTO.getName());
-        //questionsDTO1.get().setType(questionsDTO.getType());
+        Optional<SAQuestions> questionsDTO1 = questionBankRepository.findById(id);
+        questionsDTO1.get().setQuestionnaireId(SAQuestions.getQuestionnaireId());
+        questionsDTO1.get().setQuestion(SAQuestions.getQuestion());
+        questionsDTO1.get().setName(SAQuestions.getName());
+        //questionsDTO1.get().setType(SAQuestions.getType());
 
         return questionBankRepository.save(questionsDTO1.get());
     }

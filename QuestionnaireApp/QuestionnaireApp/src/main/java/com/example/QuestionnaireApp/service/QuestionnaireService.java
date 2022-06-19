@@ -1,6 +1,6 @@
 package com.example.QuestionnaireApp.service;
 
-import com.example.QuestionnaireApp.dto.QuestionnaireDTO;
+import com.example.QuestionnaireApp.model.Questionnaire;
 import com.example.QuestionnaireApp.repository.QuestionnaireRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ public class QuestionnaireService {
      * @param data
      * @return
      */
-    public QuestionnaireDTO saveQuestionnaire(QuestionnaireDTO data){
+    public Questionnaire saveQuestionnaire(Questionnaire data){
         return questionnaireRepository.save(data);
     }
 
@@ -26,7 +26,7 @@ public class QuestionnaireService {
      * get all the questionnaires
      * @return
      */
-    public List<QuestionnaireDTO> getQuestionnaire(){
+    public List<Questionnaire> getQuestionnaire(){
         return questionnaireRepository.findAll();
     }
 

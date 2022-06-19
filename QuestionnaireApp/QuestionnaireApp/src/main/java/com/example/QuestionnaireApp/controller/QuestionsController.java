@@ -1,13 +1,11 @@
 package com.example.QuestionnaireApp.controller;
 
 
-import com.example.QuestionnaireApp.dto.QuestionsDTO;
+import com.example.QuestionnaireApp.model.SAQuestions;
 import com.example.QuestionnaireApp.service.QuestionsService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
@@ -21,7 +19,7 @@ public class QuestionsController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<Object> save(@RequestBody QuestionsDTO data){
+    public ResponseEntity<Object> save(@RequestBody SAQuestions data){
         try {
             questionsService.saveQuestions(data);
             return ResponseEntity.status(HttpStatus.OK).body("question created");
@@ -60,9 +58,9 @@ public class QuestionsController {
      * @return
      */
     @PutMapping("/updateQuestion/{id}")
-    public ResponseEntity<?> updateQuestion(@PathVariable("id") int id, @RequestBody QuestionsDTO questionsDTO){
+    public ResponseEntity<?> updateQuestion(@PathVariable("id") int id, @RequestBody SAQuestions SAQuestions){
         try{
-            return ResponseEntity.status(HttpStatus.OK).body(questionsService.updateQuestion(id, questionsDTO));
+            return ResponseEntity.status(HttpStatus.OK).body(questionsService.updateQuestion(id, SAQuestions));
         }catch(Exception e){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
         }
