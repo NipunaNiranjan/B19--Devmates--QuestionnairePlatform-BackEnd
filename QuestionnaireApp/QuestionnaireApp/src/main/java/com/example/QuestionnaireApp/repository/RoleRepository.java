@@ -1,6 +1,5 @@
 package com.example.QuestionnaireApp.repository;
 
-
 import com.example.QuestionnaireApp.model.ERole;
 import com.example.QuestionnaireApp.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;

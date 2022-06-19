@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="final changes">
+      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/controller/ClassController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/dto/ClassDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/model/Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/repository/ClassRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/service/ClassService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/target/classes/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="student_viewing_class_and_questionaries" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ANUrr8F09BChn1aclgWOUZqViB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/Projects/student-management-api-main" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="QuestionnaireApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.devmates.auth.AuthApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="change readme file and signup request" />
+      <created>1654849750242</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654849750242</updated>
+      <workItem from="1654849766632" duration="3699000" />
+      <workItem from="1654864142911" duration="5384000" />
+      <workItem from="1654906473191" duration="2371000" />
+      <workItem from="1654922438448" duration="1289000" />
+      <workItem from="1654937250192" duration="36000" />
+      <workItem from="1654937566087" duration="7975000" />
+      <workItem from="1655017740800" duration="599000" />
+      <workItem from="1655018429093" duration="764000" />
+      <workItem from="1655051706349" duration="3193000" />
+      <workItem from="1655081378910" duration="825000" />
+      <workItem from="1655095695910" duration="567000" />
+    </task>
+    <task id="LOCAL-00001" summary="test get mapping request deleted">
+      <created>1654851487394</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654851487394</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test get mapping request deleted">
+      <created>1654851963998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654851963998</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added new test get mapping">
+      <created>1654852089187</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654852089187</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added new test post mapping">
+      <created>1654852466104</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654852466104</updated>
+    </task>
+    <task id="LOCAL-00005" summary="change readme file and signup request">
+      <created>1654946019594</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654946019594</updated>
+    </task>
+    <task id="LOCAL-00006" summary="change folder to questioner app">
+      <created>1655018169597</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655018169597</updated>
+    </task>
+    <task id="LOCAL-00007" summary="import files">
+      <created>1655052135873</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655052135873</updated>
+    </task>
+    <task id="LOCAL-00008" summary="import files">
+      <created>1655052146771</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655052146771</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add email and password to SignupRequest">
+      <created>1655052287925</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655052287925</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add email and password to User.java &amp; change ValidationMessages">
+      <created>1655052729961</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1655052729961</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add find method to user repo">
+      <created>1655053028631</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655053028631</updated>
+    </task>
+    <task id="LOCAL-00012" summary="change UserServiceImpl">
+      <created>1655053378037</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655053378037</updated>
+    </task>
+    <task id="LOCAL-00013" summary="change UserServiceImpl">
+      <created>1655053418922</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1655053418922</updated>
+    </task>
+    <task id="LOCAL-00014" summary="change UserServiceImpl">
+      <created>1655053426104</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1655053426104</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add admin email to application.properties">
+      <created>1655053602878</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1655053602878</updated>
+    </task>
+    <task id="LOCAL-00016" summary="complete add email &amp; phone number">
+      <created>1655053889689</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1655053889689</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add changes in AuthController">
+      <created>1655054257682</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1655054257682</updated>
+    </task>
+    <task id="LOCAL-00018" summary="final changes">
+      <created>1655054825424</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1655054825424</updated>
+    </task>
+    <task id="LOCAL-00019" summary="final changes">
+      <created>1655054879704</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1655054879704</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="test get mapping request deleted" />
+    <MESSAGE value="added new test get mapping" />
+    <MESSAGE value="added new test post mapping" />
+    <MESSAGE value="change readme file and signup request" />
+    <MESSAGE value="change folder to questioner app" />
+    <MESSAGE value="import files" />
+    <MESSAGE value="add email and password to SignupRequest" />
+    <MESSAGE value="add email and password to User.java &amp; change ValidationMessages" />
+    <MESSAGE value="add find method to user repo" />
+    <MESSAGE value="change UserServiceImpl" />
+    <MESSAGE value="add admin email to application.properties" />
+    <MESSAGE value="complete add email &amp; phone number" />
+    <MESSAGE value="add changes in AuthController" />
+    <MESSAGE value="final changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="final changes" />
+  </component>
+</project>

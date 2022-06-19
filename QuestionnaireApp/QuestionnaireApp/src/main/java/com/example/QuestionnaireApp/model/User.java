@@ -21,17 +21,23 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+
     @Column
     private boolean status;
 
-    public User(String username, String password) {
+    @Column(unique = true, nullable = false)
+    private String email;
+
+    @Column(nullable = false)
+    private String phone;
+
+
+    public User(String username, String password, String email, String phone) {
         this.username = username;
         this.password = password;
+        this.email = email;
+        this.phone = phone;
         this.status= true;
-    }
-
-    public User(long id) {
-        this.id = id;
     }
 
     @ManyToOne(
