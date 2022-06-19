@@ -24,10 +24,10 @@ public class ClassTable {
     private Integer noOfStudents;
 
     @Column
-    private Date from;
+    private Date fromDate;
 
     @Column
-    private Date to;
+    private Date toDate;
 
     @Column
     private Date createdAt;
