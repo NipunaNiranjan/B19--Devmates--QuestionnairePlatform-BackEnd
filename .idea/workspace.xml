@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="change conflicted files">
-      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/controller/ClassController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/service/ClassServices.java" afterDir="false" />
+    <list default="true" id="4974cd3e-9c13-47ad-b86c-b1649079c6c4" name="Changes" comment="added class controller and class service files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/model/ClassTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionnaireApp/QuestionnaireApp/src/main/java/com/example/QuestionnaireApp/model/ClassTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +121,7 @@
       <workItem from="1655095695910" duration="567000" />
       <workItem from="1655649817181" duration="2427000" />
       <workItem from="1655655432399" duration="1469000" />
-      <workItem from="1655703034874" duration="1633000" />
+      <workItem from="1655703034874" duration="2321000" />
     </task>
     <task id="LOCAL-00001" summary="test get mapping request deleted">
       <created>1654851487394</created>
@@ -264,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655656075078</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added class controller and class service files">
+      <created>1655709030073</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1655709030073</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +304,7 @@
     <MESSAGE value="add changes in AuthController" />
     <MESSAGE value="final changes" />
     <MESSAGE value="change conflicted files" />
-    <option name="LAST_COMMIT_MESSAGE" value="change conflicted files" />
+    <MESSAGE value="added class controller and class service files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added class controller and class service files" />
   </component>
 </project>
