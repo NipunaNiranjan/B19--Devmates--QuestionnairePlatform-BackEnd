@@ -48,7 +48,7 @@ public class User {
     )
     private Role role;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "join_class",joinColumns = {@JoinColumn(name = "user_id")},inverseJoinColumns = {@JoinColumn(name = "classTable_id")})
     private Set<ClassTable> classTables = new HashSet<>();
 }

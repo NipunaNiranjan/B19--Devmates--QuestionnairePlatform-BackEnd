@@ -41,7 +41,7 @@ public class ClassTable {
             )
     private User user;
 
-    @ManyToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "classTables")
+    @ManyToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL,mappedBy = "classTables")
     private Set<User> users= new HashSet<>();
 
 
