@@ -6,6 +6,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Setter
@@ -38,6 +40,9 @@ public class ClassTable {
                     optional = false
             )
     private User user;
+
+    @ManyToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "classTables")
+    private Set<User> users= new HashSet<>();
 
 
 }
