@@ -20,8 +20,6 @@ public class Questionnaire {
     @Column
     private String description;
     @Column
-    private Integer duration;
-    @Column
     private String type;
 
     @ManyToOne(
