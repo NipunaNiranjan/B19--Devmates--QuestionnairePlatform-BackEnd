@@ -32,5 +32,12 @@ public class ClassTable {
     @Column
     private Date createdAt;
 
+    @OneToOne
+            (
+                    targetEntity = User.class,
+                    optional = false
+            )
+    private User user;
+
 
 }
