@@ -22,7 +22,14 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/com/example/QuestionnaireApp/QuestionnaireAppApplication.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/devmates/auth/security/WebSecurityConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/example/QuestionnaireApp/security/WebSecurityConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/devmates/auth/AuthApplication.java</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
