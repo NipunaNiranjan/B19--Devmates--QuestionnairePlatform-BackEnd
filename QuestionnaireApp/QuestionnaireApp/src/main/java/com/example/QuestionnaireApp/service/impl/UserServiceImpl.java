@@ -6,13 +6,16 @@ import com.example.QuestionnaireApp.exception.BadRequestException;
 import com.example.QuestionnaireApp.model.ERole;
 import com.example.QuestionnaireApp.model.Role;
 import com.example.QuestionnaireApp.model.User;
+import com.example.QuestionnaireApp.model.views.UserView;
 import com.example.QuestionnaireApp.repository.RoleRepository;
 import com.example.QuestionnaireApp.repository.UserRepository;
+import com.example.QuestionnaireApp.repository.UserViewRepository;
 import com.example.QuestionnaireApp.service.UserService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -21,10 +24,12 @@ public class UserServiceImpl implements UserService {
     private final RoleRepository roleRepository;
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    private final UserViewRepository userViewRepository;
 
-    public UserServiceImpl(RoleRepository roleRepository, UserRepository userRepository) {
+    public UserServiceImpl(RoleRepository roleRepository, UserRepository userRepository, UserViewRepository userViewRepository) {
         this.roleRepository = roleRepository;
         this.userRepository = userRepository;
+        this.userViewRepository = userViewRepository;
     }
 
     @Override
@@ -85,5 +90,10 @@ public class UserServiceImpl implements UserService {
                 .status(user.isStatus())
                 .phone(user.getPhone())
                 .build();
+    }
+
+    @Override
+    public List<UserView> getAllUsers () {
+        return userViewRepository.findAll();
     }
 }

@@ -16,5 +16,7 @@ public class ClassDTO {
     private Date fromDate;
     private Date toDate;
     private Date createdAt;
+    private boolean flag;
     private TeacherDTO teacher;
+
 }

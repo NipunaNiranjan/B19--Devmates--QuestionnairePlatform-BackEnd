@@ -67,8 +67,20 @@ public class ClassServiceImpl implements ClassService {
 
     @Override
     public String deleteClass(Long id) {
-        classRepository.deleteById(id);
-        return "class deleted successfully";
+        Class deletedClass = classRepository.findById(id).get();
+        System.out.println(id);
+        //setting flag to deleted
+        if (!deletedClass.isFlag()){
+            try {
+                deletedClass.setFlag(true);
+                classRepository.save(deletedClass);
+                return "successfully deleted";
+            }catch (Exception e){
+                return "unsuccessful,something went wrong";
+            }
+        }else {
+            return "unsuccessful,something went wrong";
+        }
     }
 
     private ClassDTO getClassDTOBuilder(Class aClass) {

@@ -35,6 +35,9 @@ public class Class {
     @Column
     private Date createdAt;
 
+    @Column
+    private boolean flag=false;
+
     @OneToOne(
             targetEntity = User.class,
             optional = false

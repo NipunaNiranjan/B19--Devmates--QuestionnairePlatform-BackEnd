@@ -54,7 +54,7 @@ public class ClassController {
         return ResponseEntity.status(HttpStatus.OK).body(responseDTO);
     }
 
-    @DeleteMapping("/{id}")
+    @PutMapping("/deleteClass/{id}")
     public String deleteClass(@PathVariable Long id){
         return classService.deleteClass(id);
     }
