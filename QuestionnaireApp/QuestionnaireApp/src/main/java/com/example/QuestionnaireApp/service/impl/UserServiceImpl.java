@@ -1,6 +1,7 @@
 package com.example.QuestionnaireApp.service.impl;
 
 import com.example.QuestionnaireApp.dto.SignupRequest;
+import com.example.QuestionnaireApp.dto.UserDTO;
 import com.example.QuestionnaireApp.exception.BadRequestException;
 import com.example.QuestionnaireApp.model.ERole;
 import com.example.QuestionnaireApp.model.Role;
@@ -44,5 +45,45 @@ public class UserServiceImpl implements UserService {
                 .orElseThrow(() -> new BadRequestException("The given user role is not exists."));
         user.setRole(userRole);
         userRepository.save(user);
+    }
+
+    @Override
+    public String deactivateUserStatus(Long id) {
+        User updateUser = userRepository.findById(id).get();
+        if(updateUser.isStatus()== true) {
+            updateUser.setStatus(false);
+            userRepository.save(updateUser);
+            return "successfully deactivated";
+        }
+        else {
+            return "Already deactivated the user account = "+ updateUser.getUsername();
+        }
+    }
+
+    @Override
+    public String activateUserStatus(long id) {
+        User updateUser = userRepository.findById(id).get();
+        if(updateUser.isStatus()== false) {
+            updateUser.setStatus(true);
+            userRepository.save(updateUser);
+            return "successfully activated";
+        }
+        else {
+            return "Already activated the user account = "+ updateUser.getUsername();
+        }
+    }
+
+    @Override
+    public UserDTO getUsers(Long id) {
+        Optional<User> userOptional = userRepository.findById(id);
+        if(userOptional.isEmpty())
+            throw new BadRequestException("No any user found for given user id!");
+        User user = userOptional.get();
+        return UserDTO.builder()
+                .username(user.getUsername())
+                .email(user.getEmail())
+                .status(user.isStatus())
+                .phone(user.getPhone())
+                .build();
     }
 }

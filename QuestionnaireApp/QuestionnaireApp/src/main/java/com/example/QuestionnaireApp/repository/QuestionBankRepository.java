@@ -1,13 +1,12 @@
 package com.example.QuestionnaireApp.repository;
 
-import com.example.QuestionnaireApp.model.SAQuestions;
+import com.example.QuestionnaireApp.model.SAQuestion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-
+import java.util.List;
 
 @Repository
-public interface QuestionBankRepository extends JpaRepository<SAQuestions, Integer> {
-    public ArrayList<SAQuestions> findByQuestionnaireId(int id);
+public interface QuestionBankRepository extends JpaRepository<SAQuestion, Long> {
+    List<SAQuestion> findByQuestionnaireId(Long id);
 }

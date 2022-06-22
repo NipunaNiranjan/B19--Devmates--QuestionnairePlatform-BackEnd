@@ -1,49 +1,39 @@
 package com.example.QuestionnaireApp.controller;
 
-import com.example.QuestionnaireApp.model.User;
-import com.example.QuestionnaireApp.model.views.UserViews;
-import com.example.QuestionnaireApp.repository.UserRepository;
-import com.example.QuestionnaireApp.repository.UserViewRepository;
-import com.example.QuestionnaireApp.service.UserServices;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.QuestionnaireApp.dto.ResponseDTO;
+import com.example.QuestionnaireApp.service.UserService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
-@CrossOrigin("*")
+@CrossOrigin(value = "*")
 @RestController
+@RequestMapping(value = "/api/v1/users")
 public class UserController {
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserService userService;
 
-    @Autowired
-    private UserViewRepository userViewRepository;
-
-    @Autowired
-    private UserServices userServices;
-
-    @GetMapping("/getUsers")
-    public List<User> getUser () {
-        return userRepository.findAll();
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
 
-    @GetMapping("/admin/view_users")
-    public List<UserViews> getUsers () {
-        return userViewRepository.findAll();
+    @GetMapping
+    public ResponseEntity<?> getUsers(@PathVariable("id") Long id) {
+        ResponseDTO<?> responseDTO = ResponseDTO.builder()
+                .statusCode(HttpStatus.OK.value())
+                .status(HttpStatus.OK.toString())
+                .body(userService.getUsers(id))
+                .build();
+        return ResponseEntity.status(HttpStatus.OK).body(responseDTO);
     }
 
-    @PutMapping ( "/admin/deactivate/{id}" )
+    @PutMapping( "/deactivate/{id}" )
     public String deactivateUser(@PathVariable Long id){
-
-         return userServices.deactivateUserStatus(id);
-
+         return userService.deactivateUserStatus(id);
     }
 
-    @PutMapping("/admin/activate_user/{id}")
-    public  String activateUser(@PathVariable long id){
-         return userServices.activateUserStatus(id);
+    @PutMapping("/admin/active/{id}")
+    public String activateUser(@PathVariable long id){
+         return userService.activateUserStatus(id);
     }
-
-
 }

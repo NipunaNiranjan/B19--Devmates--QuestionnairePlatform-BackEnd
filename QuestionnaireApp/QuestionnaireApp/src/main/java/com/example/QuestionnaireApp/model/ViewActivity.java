@@ -1,33 +1,28 @@
 package com.example.QuestionnaireApp.model;
 
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name= "viewActivities")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ViewActivities {
-
+@Getter
+@Setter
+@Entity
+public class ViewActivity {
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @ManyToOne(
-            targetEntity = ClassTable.class,
+            targetEntity = Class.class,
             optional = false
     )
-    private ClassTable classID;
+    private Class classID;
 
     @OneToOne(
             targetEntity = Questionnaire.class,
             optional = false
     )
     private Questionnaire questionnaireID;
-
 }

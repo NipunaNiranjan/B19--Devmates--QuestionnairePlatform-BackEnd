@@ -1,6 +1,5 @@
 package com.example.QuestionnaireApp.model.views;
 
-
 import com.example.QuestionnaireApp.model.ERole;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,7 +14,7 @@ import javax.persistence.*;
 @Setter
 @Getter
 @NoArgsConstructor
-public class UserViews {
+public class UserView {
 
     @Id
     private Long id;
@@ -30,8 +29,7 @@ public class UserViews {
     @Enumerated(value = EnumType.STRING)
     private ERole role;
 
-    public UserViews(ERole role) {
+    public UserView(ERole role) {
         this.role = role;
     }
-
 }

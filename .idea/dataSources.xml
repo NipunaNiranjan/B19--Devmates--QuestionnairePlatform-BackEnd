@@ -10,5 +10,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306/login_db?createDatabaseIfNotExist=true&amp;allowPublicKeyRetrieval=true</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="@localhost" uuid="821e2e23-6ee6-4bff-b3a5-aed65e71c06a">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

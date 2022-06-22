@@ -1,38 +1,35 @@
 package com.example.QuestionnaireApp.model;
 
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
-
-@Entity
-@Table(name= "McqQuestions")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class McqQuestions {
-
+@Getter
+@Setter
+@Entity
+public class MCQQuestion {
         @Id
         @GeneratedValue( strategy = GenerationType.IDENTITY)
-        private Integer id;
-
-        @Column
+        private Long id;
         private String question;
-        @Column
         private String option1;
-        @Column
         private String option2;
-        @Column
         private String option3;
-        @Column
         private String option4;
-        @Column
         private int  correctAnswer;
-        @Column
         private int questionnaireID;
 
+        @OneToMany(
+                targetEntity = Submission.class,
+                fetch = FetchType.LAZY,
+                mappedBy = "mcqQuestion"
+        )
+        private List<Submission> submissions;
 
+        public MCQQuestion(Long id) {
+                this.id = id;
+        }
 }

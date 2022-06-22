@@ -1,5 +1,6 @@
 package com.example.QuestionnaireApp.controller;
 
+import com.example.QuestionnaireApp.dto.ResponseDTO;
 import com.example.QuestionnaireApp.model.Questionnaire;
 import com.example.QuestionnaireApp.service.QuestionnaireService;
 import org.springframework.http.HttpStatus;
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(value = "/questionnaire")
+@RequestMapping(value = "/api/v1/questionnaires")
 public class QuestionnaireController {
 
     private final QuestionnaireService questionnaireService;
@@ -17,7 +18,7 @@ public class QuestionnaireController {
         this.questionnaireService = questionnaireService;
     }
 
-    @PostMapping("/create")
+    @PostMapping
     public ResponseEntity<Object> createQuestionnaire(@RequestBody Questionnaire data){
         try{
             return ResponseEntity.status(HttpStatus.OK).body(questionnaireService.saveQuestionnaire(data));
@@ -26,12 +27,8 @@ public class QuestionnaireController {
         }
     }
 
-    /**
-     * Get all the questionnaires
-     * @return
-     */
-    @GetMapping("/getQuestionnaire/{id}")
-    public ResponseEntity<Object> getQuestionnaire(){
+    @GetMapping
+    public ResponseEntity<Object> getQuestionnaires(){
         try{
             return ResponseEntity.status(HttpStatus.OK).body(questionnaireService.getQuestionnaire());
         }catch(Exception e){
@@ -39,7 +36,16 @@ public class QuestionnaireController {
         }
     }
 
-    @DeleteMapping("/deleteQuestionnaire/{id}")
+    @GetMapping("/class/{id}")
+    public ResponseEntity<?> getQuestionnaires(@PathVariable("id") Long classId){
+        ResponseDTO<?> responseDTO = ResponseDTO.builder()
+                .statusCode(HttpStatus.OK.value())
+                .status(HttpStatus.OK.toString())
+                .body(questionnaireService.getQuestionnaires(classId)).build();
+        return ResponseEntity.status(HttpStatus.OK).body(responseDTO);
+    }
+
+    @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteQuestionnaire(@PathVariable("id") int id){
         try{
             return ResponseEntity.status(HttpStatus.OK).body(questionnaireService.deleteQuestionnaire(id));
@@ -47,5 +53,4 @@ public class QuestionnaireController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }
     }
-
 }

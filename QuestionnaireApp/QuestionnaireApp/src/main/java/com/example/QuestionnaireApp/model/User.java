@@ -5,11 +5,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
-@Entity
+@NoArgsConstructor
 @Setter
 @Getter
-@NoArgsConstructor
+@Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,8 +22,6 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-
-    @Column
     private boolean status;
 
     @Column(unique = true, nullable = false)
@@ -31,6 +30,9 @@ public class User {
     @Column(nullable = false)
     private String phone;
 
+    public User(long id) {
+        this.id = id;
+    }
 
     public User(String username, String password, String email, String phone) {
         this.username = username;
@@ -45,4 +47,17 @@ public class User {
             optional = false
     )
     private Role role;
+
+    @OneToMany(
+            mappedBy = "student",
+            fetch = FetchType.LAZY
+    )
+    private List<IClassStudent> students;
+
+    @OneToMany(
+            mappedBy = "student",
+            targetEntity = Submission.class,
+            fetch = FetchType.LAZY
+    )
+    private List<Submission> submissions;
 }
