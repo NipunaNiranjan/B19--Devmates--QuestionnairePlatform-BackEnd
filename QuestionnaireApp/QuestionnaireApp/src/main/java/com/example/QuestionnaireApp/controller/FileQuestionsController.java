@@ -3,6 +3,7 @@ package com.example.QuestionnaireApp.controller;
 import com.example.QuestionnaireApp.message.FileDetails;
 import com.example.QuestionnaireApp.message.ResponseFile;
 import com.example.QuestionnaireApp.message.ResponseMessage;
+import com.example.QuestionnaireApp.message.ResponseSingleFile;
 import com.example.QuestionnaireApp.model.FileQuestions;
 import com.example.QuestionnaireApp.service.FileQuestionsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -51,18 +53,17 @@ public class FileQuestionsController {
         return ResponseEntity.status(HttpStatus.OK).body(files);
     }
     @GetMapping("/files/{id}")
-    public ResponseEntity<String> getFile(@PathVariable Integer id) {
+    public ResponseEntity<ArrayList<ResponseSingleFile>> getFile(@PathVariable Integer id) {
         //try{
             //return ResponseEntity.status(HttpStatus.OK).body(fileQuestionsService.getFile(id));
         //}catch(Exception e){
             //return ResponseEntity.status(HttpStatus.NOT_FOUND);
         //}
 
-        FileQuestions fileQuestions = fileQuestionsService.getFile(id);
+        ArrayList<ResponseSingleFile>responseSingleFiles=fileQuestionsService.getFile(id);
 
-        return ResponseEntity.ok()
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileQuestions.getName() + "\"")
-                .body(fileQuestions.getName());
+
+        return ResponseEntity.ok().body(responseSingleFiles);
     }
 
     @DeleteMapping("/files/{id}")
