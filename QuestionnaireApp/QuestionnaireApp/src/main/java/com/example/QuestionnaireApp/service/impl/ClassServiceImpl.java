@@ -91,8 +91,10 @@ public class ClassServiceImpl implements ClassService {
                 .fromDate(aClass.getFromDate())
                 .toDate(aClass.getToDate())
                 .createdAt(aClass.getCreatedAt())
+                .flag(aClass.isFlag())
                 .teacher(
                         TeacherDTO.builder()
+                                .id(aClass.getTeacher().getId())
                                 .email(aClass.getTeacher().getEmail())
                                 .phone(aClass.getTeacher().getPhone())
                                 .build()
