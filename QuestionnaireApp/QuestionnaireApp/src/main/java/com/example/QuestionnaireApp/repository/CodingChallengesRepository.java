@@ -14,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 
 import org.springframework.stereotype.Repository;
 
+import com.example.QuestionnaireApp.model.CodeChallengeQuestionnaire;
 import com.example.QuestionnaireApp.model.CodingChallenges;
 
 @Repository
@@ -25,7 +26,8 @@ public interface CodingChallengesRepository extends JpaRepository<CodingChalleng
 
     CodingChallenges findByIdOrderByIdDesc( int id );
     
-
+    // List<CodingChallenges>findChallengesByQuestionnairesId( Long questionnaireId);
+    // List<CodeChallengeQuestionnaire>findQuestionnairesByChallengesId(int cId);
     
     // List<CodingChallenges> findByPublished(boolean published);
 

@@ -6,17 +6,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
+import org.springframework.web.bind.annotation.*;
+
+import com.example.QuestionnaireApp.model.CodeChallengeQuestionnaire;
 import com.example.QuestionnaireApp.model.CodingChallenges;
+import com.example.QuestionnaireApp.repository.CodeChallengeQuestionnaireRepository;
 import com.example.QuestionnaireApp.repository.CodingChallengesRepository;
 
 import org.springframework.web.bind.annotation.RequestBody;
@@ -31,6 +26,9 @@ public class CodingChallengesController {
     
     @Autowired
     private CodingChallengesRepository codingChallengesRepository ;
+
+    @Autowired
+    private CodeChallengeQuestionnaireRepository codeChallengeQuestionnaireRepository ;
 
     // public CodingChallengesController ( CodingChallengesRepository challengeRepo){
     //     this.codingChallengesRepository = challengeRepo ;
@@ -105,24 +103,45 @@ public class CodingChallengesController {
      }
 
 
-     @PutMapping("/codingChallenges/{id}")
-     public ResponseEntity<?> updateTutorial(@PathVariable("id") int id , @RequestBody CodingChallenges tutorial ) {
-         Optional<CodingChallenges> tutorialData = codingChallengesRepository.findById(id) ;
+    //  @PutMapping("/codingChallenges/{id}")
+    //  public ResponseEntity<CodingChallenges> updateTutorial(@PathVariable("id") int id , @RequestBody CodingChallenges tutorial ) {
+    //      Optional<CodingChallenges> tutorialData = codingChallengesRepository.findById(id) ;
         
-         if (tutorialData.isPresent()) {
-             CodingChallenges _tutorial = tutorialData.get();
-             _tutorial.setChallageName(tutorial.getChallageName());
-             _tutorial.setDescription(tutorial.getDescription());
-             _tutorial.setProblemStatement(tutorial.getProblemStatement());
-             _tutorial.setInputFormat(tutorial.getInputFormat());
-             _tutorial.setConstraints(tutorial.getConstraints());
-             _tutorial.setOutputFormat(tutorial.getOutputFormat());
-             _tutorial.setPublished(tutorial.isPublished());
-             return ResponseEntity.status( HttpStatus.OK).body(codingChallengesRepository.save(_tutorial)) ;
-         } else {
-             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-         }
-     }
+    //      if (tutorialData.isPresent()) {
+    //          CodingChallenges _tutorial = tutorialData.get();
+    //          _tutorial.setChallageName(tutorial.getChallageName());
+    //          _tutorial.setDescription(tutorial.getDescription());
+    //          _tutorial.setProblemStatement(tutorial.getProblemStatement());
+    //          _tutorial.setInputFormat(tutorial.getInputFormat());
+    //          _tutorial.setConstraints(tutorial.getConstraints());
+    //          _tutorial.setOutputFormat(tutorial.getOutputFormat());
+    //          _tutorial.setPublished(tutorial.isPublished());
+    //          return ResponseEntity.status( HttpStatus.OK).body(codingChallengesRepository.save(_tutorial)) ;
+    //      } else {
+    //          return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    //      }
+    //  }
+  @PutMapping("/codingChallenges/{id}")
+  CodingChallenges updateChallenges(@RequestBody CodingChallenges newCode, @PathVariable int id){
+
+        return codingChallengesRepository.findById(id)
+            .map(code -> {
+                code.setChallageName( newCode.getChallageName());
+                code.setDescription( newCode.getDescription());
+                code.setProblemStatement( newCode.getProblemStatement());
+                code.setInputFormat( newCode.getInputFormat());
+                code.setConstraints( newCode.getConstraints());
+                code.setOutputFormat( newCode.getOutputFormat());
+                code.setPublished( newCode.isPublished()); 
+                return codingChallengesRepository.save(code);
+            } ) 
+            .orElseGet( () -> {
+                newCode.setId(id);
+                return codingChallengesRepository.save(newCode);
+
+            }) ;
+  }
+
 
      @DeleteMapping("/codingChallenges/{id}")
      public ResponseEntity<HttpStatus> deleteTutorial(@PathVariable("id") int id) {
@@ -159,5 +178,40 @@ public class CodingChallengesController {
          }
 
      }
+
+     //-----------------for Questionnaire--------------------------
+    //  @GetMapping("/codingChallenges/{cId}/codeQuestionnaires")
+    //     public ResponseEntity<List<CodeChallengeQuestionnaire>>getAllQuestionnairesByChallengeId( @PathVariable(value = "cId") int cId){
+    //         List<CodeChallengeQuestionnaire> questionnaires = codingChallengesRepository.findQuestionnairesByChallengesId(cId);
+    //         return new ResponseEntity<>(questionnaires, HttpStatus.OK);
+    //     }
+    
+    //  @GetMapping("/codeQuestionnaires/{questionnaireId}/codingChallenges")
+    //  public ResponseEntity<List<CodingChallenges>>getAllChallengesByQuestionnaireId( @PathVariable(value = "qId") Long qId){
+    //     List<CodingChallenges> challenges = codingChallengesRepository.findChallengesByQuestionnairesId( qId);
+    //     return new ResponseEntity<>(challenges, HttpStatus.OK);
+    //  }
+
+     //------adding challenges to the Questionnaire---
+
+    //  @PostMapping("/codeQuestionnaires/{questionnaireId}/codingChallenges")
+    //  public ResponseEntity<CodingChallenges> addChallengesToQuestionnaire(@PathVariable(value = "qId") Long qId , @RequestBody CodingChallenges codeRequest ){
+    //     CodingChallenges challenge = codeChallengeQuestionnaireRepository.findById( qId).map( questionnaire -> {
+    //         int cId = codeRequest.getId();
+
+    //         //challenge exists
+    //         if(cId != 0){
+    //             CodingChallenges _challenge = codingChallengesRepository.findByIdOrderByIdDesc(cId);
+    //             questionnaire.addChallenge(_challenge);
+    //             codeChallengeQuestionnaireRepository.save(questionnaire);
+    //             return _challenge ;
+    //         }
+    //         // add and create new challenge
+    //         // questionnaire.addChallenge(codeRequest);
+    //         // return codingChallengesRepository.save(codeRequest);
+    //         return  ;
+    //     })
+    //     return new ResponseEntity<>(challenge , HttpStatus.OK);
+    //  }
 
     }
