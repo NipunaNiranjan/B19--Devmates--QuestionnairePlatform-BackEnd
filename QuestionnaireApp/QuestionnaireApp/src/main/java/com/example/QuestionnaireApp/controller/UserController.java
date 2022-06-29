@@ -1,12 +1,15 @@
 package com.example.QuestionnaireApp.controller;
 
 import com.example.QuestionnaireApp.dto.ResponseDTO;
+import com.example.QuestionnaireApp.dto.SignupRequest;
+import com.example.QuestionnaireApp.dto.UpdateUserRequest;
 import com.example.QuestionnaireApp.model.views.UserView;
 import com.example.QuestionnaireApp.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 
@@ -44,5 +47,15 @@ public class UserController {
     @GetMapping("/allUsers")
     public List<UserView> getAllUsers (){
         return userService.getAllUsers();
+    }
+
+    @PutMapping("/editProfile")
+    public ResponseEntity<?> editUser(@RequestBody UpdateUserRequest updateUserRequest) {
+        userService.editUser(updateUserRequest);
+        ResponseDTO<?> responseDTO = ResponseDTO.builder()
+                .statusCode(HttpStatus.CREATED.value())
+                .status(HttpStatus.CREATED.toString())
+                .body("Your account has been updated successfully!").build();
+        return ResponseEntity.status(HttpStatus.CREATED).body(responseDTO);
     }
 }

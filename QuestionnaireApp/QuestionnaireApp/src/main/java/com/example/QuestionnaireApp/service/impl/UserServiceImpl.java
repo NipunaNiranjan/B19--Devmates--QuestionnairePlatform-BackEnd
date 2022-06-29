@@ -1,6 +1,7 @@
 package com.example.QuestionnaireApp.service.impl;
 
 import com.example.QuestionnaireApp.dto.SignupRequest;
+import com.example.QuestionnaireApp.dto.UpdateUserRequest;
 import com.example.QuestionnaireApp.dto.UserDTO;
 import com.example.QuestionnaireApp.exception.BadRequestException;
 import com.example.QuestionnaireApp.model.ERole;
@@ -50,6 +51,23 @@ public class UserServiceImpl implements UserService {
                 .orElseThrow(() -> new BadRequestException("The given user role is not exists."));
         user.setRole(userRole);
         userRepository.save(user);
+    }
+
+    public void editUser(UpdateUserRequest updateUserRequest){
+
+        Optional<User> userOptionalByUsername = userRepository.findUserByUsername(updateUserRequest.getUsername());
+        if(userOptionalByUsername.isPresent()) throw new BadRequestException("The given username already exists!");
+        Optional<User> userOptionalByEmail = userRepository.findUserByEmail(updateUserRequest.getEmail());
+        if(userOptionalByEmail.isPresent()) throw new BadRequestException("The given Email already exists!");
+
+
+        User updateUser = userRepository.findById(updateUserRequest.getId()).get();
+        if(!updateUserRequest.getUsername().isEmpty()) updateUser.setUsername(updateUserRequest.getUsername());
+        if(!updateUserRequest.getEmail().isEmpty()) updateUser.setEmail(updateUserRequest.getEmail());
+        if(!updateUserRequest.getPhone().isEmpty()) updateUser.setPhone(updateUserRequest.getPhone());
+        if(!updateUserRequest.getPassword().isEmpty()) updateUser.setPassword(passwordEncoder.encode(updateUserRequest.getPassword()));
+        userRepository.save(updateUser);
+
     }
 
     @Override

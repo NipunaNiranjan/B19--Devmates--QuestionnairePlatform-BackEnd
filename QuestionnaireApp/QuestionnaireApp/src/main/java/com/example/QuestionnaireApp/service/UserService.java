@@ -1,6 +1,7 @@
 package com.example.QuestionnaireApp.service;
 
 import com.example.QuestionnaireApp.dto.SignupRequest;
+import com.example.QuestionnaireApp.dto.UpdateUserRequest;
 import com.example.QuestionnaireApp.dto.UserDTO;
 import com.example.QuestionnaireApp.model.User;
 import com.example.QuestionnaireApp.model.views.UserView;
@@ -13,4 +14,5 @@ public interface UserService {
     String activateUserStatus(long id);
     UserDTO getUsers(Long id);
     List<UserView> getAllUsers();
+    void editUser(UpdateUserRequest updateUserRequest);
 }
